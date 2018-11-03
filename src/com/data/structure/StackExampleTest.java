@@ -42,4 +42,11 @@ public class StackExampleTest {
     assertThat(44444, is(stack.peek()));
   }
 
+  @Test
+  public void stack은_마지막에_추가한_값이_가장_먼저_나온다() {
+    stack.add(00000);
+    assertThat(00000, is(stack.peek()));
+    assertThat(00000, is(stack.pop()));
+  }
+
 }
